@@ -1,0 +1,120 @@
+@font-face {
+    font-family: big;
+    src: url(BigShouldersDisplay-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: lexan;
+    src: url(LexendDeca-VariableFont_wght.ttf);
+  }
+  .attribution { font-size: 11px; text-align: center; font-family: lexan; font-size: 15px;}
+  .attribution a { color: hsl(228, 45%, 44%); }
+  body{
+    background-color: hsl(0, 0%, 95%);
+    }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .main{
+    display: flex;
+     margin: 0;
+     position: absolute;
+     top: 50%;
+     -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    flex-wrap: wrap;
+  }
+    .child{
+      max-width: 250px;
+      flex-grow: 1;
+    }
+    .sedans{
+      background-color: hsl(31, 77%, 52%);
+    }
+    .suv{
+      background-color: hsl(184, 100%, 22%);
+    }
+    .luxury{
+      background-color: hsl(179, 100%, 13%);
+    }
+    img{
+      margin-top: 10%;
+      margin-left: 10%;
+    }
+    h1{
+      margin-top: 10%;
+      margin-left: 10%;
+      font-family: big;
+      text-transform: uppercase;
+      color:  hsl(0, 0%, 95%);
+
+    }
+    p{
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: lexan;
+      
+      color: hsla(0, 0%, 100%, 0.75);
+      }
+    button{
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-bottom: 10%;
+      height: 50px;
+      width: 150px;
+      border-radius: 25px;
+      border-style: none;
+      font-family: lexan;
+    }
+    .btn-sedans{
+        color: hsl(31, 77%, 52%);
+    }
+    .btn-suv{
+        color: hsl(184, 100%, 22%);
+    }
+    .btn-luxury{
+        color: hsl(179, 100%, 13%);
+    }
+    .btn-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%);
+    border-width: 3px;
+    }
+    .btn-suv:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border-style: solid;
+  border-color: hsl(0, 0%, 95%);
+  border-width: 3px;
+}
+.btn-luxury:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-style: solid;
+  border-color: hsl(0, 0%, 95%);
+  border-width: 3px;
+}
+@media screen and (max-width: 600PX) {
+    .wrapper{
+        
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+  .main{
+    display: block;
+    
+    margin-top: 70%;
+   
+    
+  }
+    .child{
+      max-width: 300px;
+     
+    }
+}
